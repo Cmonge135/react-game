@@ -1,0 +1,30 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "main money";
+    grid-template-rows: auto;
+    grid-template-columns: 75vw 25vw;
+}
+
+.container section {
+    grid-area: main;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--dark-blue)),
+        url("../../assets/img/bg.jpg") center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section h1 {
+    position: relative;
+    inset: 0;
+    margin: auto;
+}
+
+.container section > div {
+    height: 50%;
+}
+
+.container section > div:nth-child(1) {
+    height: 50%;
+}
